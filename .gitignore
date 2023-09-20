@@ -1,0 +1,7 @@
+node_modules
+.dev_dependency
+config.env
+.vscode
+README.md
+.cache
+dev-data
