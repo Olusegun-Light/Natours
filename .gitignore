@@ -5,3 +5,6 @@ config.env
 README.md
 .cache
 dev-data
+.babelrc
+.prettierrc
+.eslintrc.json
