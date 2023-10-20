@@ -33,7 +33,7 @@ if (loginForm) {
 if (logOutBtn) logOutBtn.addEventListener("click", logout);
 
 if (signupForm) {
-  loginForm.addEventListener("submit", (e) => {
+  signupForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;

@@ -12695,7 +12695,7 @@ if (loginForm) {
 }
 if (logOutBtn) logOutBtn.addEventListener("click", _login.logout);
 if (signupForm) {
-  loginForm.addEventListener("submit", function (e) {
+  signupForm.addEventListener("submit", function (e) {
     e.preventDefault();
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -12774,7 +12774,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "13605" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3319" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
