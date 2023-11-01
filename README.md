@@ -126,7 +126,7 @@ New users are provided with a default profile, which can be customized at any ti
 
 ### Booking Tours with Stripe
 
-Check your booked tours by visiting your user profile and clicking on `My Bookings`.
+Make secure tour bookings with Stripe. For test payments, use the details provided in the image.
 ![Booking](public/img/git/booking.png)
 
 ### Review Your Bookings
