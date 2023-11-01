@@ -1,7 +1,6 @@
 # Natours: Tourisim Web App
 
 ![Logo](public/img/git/img.png)
-🌐 Project is life at [Natours.](https://natours-hkay.onrender.com/)
 
 Welcome to the Natours: Tourisim Web App! Discover exciting tours, share your experiences, and manage user profiles through this comprehensive API. Whether you're an adventure seeker, a tour operator, or an administrator, the Natours API offers a range of functionalities to enhance your journey.
 
