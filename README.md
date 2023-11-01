@@ -1,6 +1,6 @@
 # Natours: Tourisim Web App
 
-![Logo](public/img/img.png)
+![Logo](public/img/git/img.png)
 🌐 Project is life at [Natours.](https://natours-hkay.onrender.com/)
 
 Welcome to the Natours: Tourisim Web App! Discover exciting tours, share your experiences, and manage user profiles through this comprehensive API. Whether you're an adventure seeker, a tour operator, or an administrator, the Natours API offers a range of functionalities to enhance your journey.
@@ -10,6 +10,9 @@ Explore a diverse collection of tours, each with its own unique charm and advent
 
 **Reviews**
 Share your thoughts and feedback on tours by leaving reviews. The Reviews API enables you to create, update, and delete your reviews, allowing you to express your genuine experiences with other travelers.
+
+**Bookings**
+Plan your trips with ease by making bookings for your favorite tours. Create bookings, retrieve booking details, and manage your bookings effortlessly. The Bookings API provides the functionality you need to reserve your spot on exciting adventures.
 
 **Users**
 Connect with fellow travelers, manage your own profile, and enjoy seamless authentication. Sign up to join the Natours community, log in to access your account, or reset your password if needed. Update your profile details, or choose to deactivate your account.
@@ -23,7 +26,7 @@ Explore the Natours API to make the most of your adventure and connect with like
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
+- [How to Use Natours](#how-to-use-natours)
 - [Authentication](#authentication)
 - [Routes](#routes)
 - [Error Handling](#error-handling)
@@ -48,7 +51,7 @@ Welcome to the Natours documentation. This API provides various functionalities 
 
 ### Prerequisites
 
-- Node.js (version v16.16.0)
+- Node.js (v16)
 - npm
 
 ### Installation
@@ -56,7 +59,7 @@ Welcome to the Natours documentation. This API provides various functionalities 
 1. Clone the repository:
 
    ```bash
-   git cllone https://github.com/Olusegun-Light/Natours.git
+   git clone https://github.com/Olusegun-Light/Natours.git
    cd Natours
    ```
 
@@ -88,9 +91,50 @@ Welcome to the Natours documentation. This API provides various functionalities 
    npm run dev
    ```
 
-## Usage
+## How to Use Natours
 
-Once the server is up and running, you can use API endpoints to perform various operations. Refer to the [Routes](#routes) section for details on available endpoints and their functionalities.
+Discover the simplicity of navigating through Natours with these easy steps:
+
+### Page Overview (Home Page)
+
+![Home](public/img/git/img.png)
+
+### Create Your Account (Signup)
+
+Fill in the form with your unique email, ensuring each email is exclusive to a user. Confirm your password to complete the signup.
+![SignUp](public/img/git/signup.png)
+
+### Login into your account (Login)
+
+If you already have an account, simply log in.
+![Login](public/img/git/login.png)
+
+### Upon Successful Login or Account Creation
+
+You'll be redirected to the home page.
+![Home](public/img/git/user.png)
+
+### Access Your Profile
+
+Click the icon displaying your name to visit your profile. Here, you can adjust settings, view bookings, and check tour reviews.
+![Profile](public/img/git/useracc.png)
+
+### Initial Profile for New Accounts
+
+New users are provided with a default profile, which can be customized at any time. After modifying your Name, Email, or photo, simply click the Save Settings button to apply these changes.
+![Photo](public/img/git/save-img.png)
+
+### Booking Tours with Stripe
+
+Check your booked tours by visiting your user profile and clicking on `My Bookings`.
+![Booking](public/img/git/booking.png)
+
+### Review Your Bookings
+
+Take a looks at tours booked by checking your user profile, click `My Bookings`
+![Home](public/img/git/bookings_3.png)
+
+Experience the joy of your vacation with Natours! ❤️
 
 ## Authentication
 
@@ -195,13 +239,15 @@ In addition to the API routes, there are routes dedicated to rendering templates
   `GET /my-tours`
 
 - **User Data Submission:** Handle user data submission for updating profile information.
-  `POST /submit-user-data`
+  `POST /tours`
+
+- To learn more about the API, explore the [Tourism API repository](https://github.com/Olusegun-Light/Tourisim-API).
 
 ## Postman Collection
 
 You can explore and test the API endpoints using the provided Postman collection. The collection includes all the defined API routes along with example requests and responses.
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/collections/YOUR_POSTMAN_COLLECTION_ID)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/20337559/2s9Y5SWm44)
 
 Click the "Run in Postman" button above to import the collection into your Postman workspace.
 
@@ -216,3 +262,32 @@ Contributions are welcome! If you find any issues or have improvements to sugges
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin feature/new-feature`
 5. Open a pull request
+
+## Packages Used
+
+- [axios](https://www.npmjs.com/package/axios)
+- [bcryptjs](https://www.npmjs.com/package/bcryptjs)
+- [compression](https://www.npmjs.com/package/compression)
+- [cookie-parser](https://www.npmjs.com/package/cookie-parser)
+- [cors](https://www.npmjs.com/package/cors)
+- [crypto](https://nodejs.org/api/crypto.html)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [express](https://www.npmjs.com/package/express)
+- [express-jwt](https://www.npmjs.com/package/express-jwt)
+- [express-mongo-sanitize](https://www.npmjs.com/package/express-mongo-sanitize)
+- [express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
+- [helmet](https://www.npmjs.com/package/helmet)
+- [hpp](https://www.npmjs.com/package/hpp)
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+- [jwks-rsa](https://www.npmjs.com/package/jwks-rsa)
+- [mongoose](https://www.npmjs.com/package/mongoose)
+- [morgan](https://www.npmjs.com/package/morgan)
+- [multer](https://www.npmjs.com/package/multer)
+- [nodemailer](https://www.npmjs.com/package/nodemailer)
+- [parcel-bundler](https://www.npmjs.com/package/parcel-bundler)
+- [pug](https://www.npmjs.com/package/pug)
+- [sharp](https://www.npmjs.com/package/sharp)
+- [slugify](https://www.npmjs.com/package/slugify)
+- [stripe](https://www.npmjs.com/package/stripe)
+- [validator](https://www.npmjs.com/package/validator)
+- [xss-clean](https://www.npmjs.com/package/xss-clean)
