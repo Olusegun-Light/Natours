@@ -20,7 +20,7 @@ const bookingRouter = require("./routes/bookingRoutes");
 
 const app = express();
 
-app.enable("trust proxy");
+// app.enable("trust proxy");
 
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
@@ -28,9 +28,9 @@ app.set("views", path.join(__dirname, "views"));
 // Global Middleware
 
 // Implement CORS
-// app.use(cors());
+app.use(cors());
 // Access-Control-Allow-Origin *
-// app.options("*", cors());
+app.options("*", cors());
 
 //  Serving static files
 app.use(express.static(path.join(__dirname, "public")));

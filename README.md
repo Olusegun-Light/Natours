@@ -118,6 +118,10 @@ You'll be redirected to the home page.
 Click the icon displaying your name to visit your profile. Here, you can adjust settings, view bookings, and check tour reviews.
 ![Profile](public/img/git/useracc.png)
 
+### Admin Profile
+
+![Profile](public/img/git/admin.png)
+
 ### Initial Profile for New Accounts
 
 New users are provided with a default profile, which can be customized at any time. After modifying your Name, Email, or photo, simply click the Save Settings button to apply these changes.
